@@ -11,7 +11,7 @@ Vanilla SGD that clamps and scales the gradient of all parameters to the interva
 It's a drop in replacement for your regular torch optimizer.  
 Try it out and report your results if you want.  
   
-So far ClampSGD has been used to finetune StyleGAN2/3 from CLIP with great results.
+So far ClampSGD has been used to finetune RGB networks, VQGAn and StyleGAN2/3 from CLIP with great results.
 Performs best with clamp value of 1e-30 which almost turns it into a sign function 
 on the grad except for float artifacts.   
   
